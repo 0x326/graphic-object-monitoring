@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #rootObject {
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+            .object {
+                border-width: 5px; 
+                border-style: solid;
+                border-color: black;
+                border-radius: 7px;
+                margin: 5px;
+                padding: 3px;
+                /*background-image: linear-gradient(silver 0%, gray 100%);*/
+                background-color: rgba(173, 216, 230, 0.3);
+            }
+            .children {
+                margin-left: 0px;
+                margin-bottom: 5px;
+                background: lightGray;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="linkForBlobSaving" style="display:none" ></a>
+        <a id="userLinkToSaveData" href="javascript:">Save Data</a>
+        <div class="object" id="rootObject">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+            [object Object]
+            <div class="children"></div>
+        </div>
+        <script type="application/javascript" src="socket.io-1.4.5.js"></script>
+        <script type="application/javascript" src="browser-logic.js"></script>
+        <script type="application/javascript" >
+            var socket = io.connect(window.location.href);
+            socket.on('navdata', function (data) {
+                console.log("Incoming Navdata");
+                console.dir(data);
+                checkObject(data);
+            });
+        </script>
+    </body>
+</html>

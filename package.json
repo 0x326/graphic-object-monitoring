@@ -1,0 +1,11 @@
+{
+  "name": "graphic-object-monitoring",
+  "version": "0.0.1",
+  "description": "Provides a graphical way of monitoring changes within an Object",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Meyer",
+  "license": "MIT"
+}
