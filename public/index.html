@@ -36,8 +36,8 @@
         <script type="application/javascript" src="browser-logic.js"></script>
         <script type="application/javascript" >
             var socket = io.connect(window.location.href);
-            socket.on('navdata', function (data) {
-                console.log("Incoming Navdata");
+            socket.on('checkObject', function (data) {
+                console.log("Incoming Object");
                 console.dir(data);
                 checkObject(data);
             });
