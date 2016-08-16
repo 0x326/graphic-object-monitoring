@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/0x326/graphic-object-monitoring/issues"
   },
-  "homepage": "https://github.com/0x326/graphic-object-monitoring#readme"
+  "homepage": "https://github.com/0x326/graphic-object-monitoring#readme",
+  "keywords": [
+    "object",
+    "recursive",
+    "visual",
+    "monitor",
+    "properties",
+    "colorcoding",
+    "change"
+  ]
 }
