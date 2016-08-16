@@ -1,6 +1,6 @@
 # Graphic Object Monitoring
 
-This code allows one to visualize an `Object` and to see how its properties are changing with colorized markers. This software keeps logs of when and how it changed for further statistical analysis
+This code allows one to visualize an `Object` and see how its properties are changing with colorized markers. This software keeps logs of when and how it changed for further statistical analysis
 
 ## Psuedocode for Graphic Object Monitoring
 
